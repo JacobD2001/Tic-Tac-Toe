@@ -23,5 +23,10 @@ namespace Tic_Tac_Toe
         {
             InitializeComponent();
         }
+
+        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
