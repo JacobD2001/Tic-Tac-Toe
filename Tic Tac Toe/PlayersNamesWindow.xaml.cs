@@ -26,6 +26,16 @@ namespace Tic_Tac_Toe
 
         private void btnPlay_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(P1.Text) || string.IsNullOrEmpty(P2.Text))
+            {
+                MessageBox.Show("Please type nicknames of all players!");
+            }
+            else
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
 
         }
     }

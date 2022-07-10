@@ -6,6 +6,11 @@
         xmlns:local="clr-namespace:Tic_Tac_Toe"
         mc:Ignorable="d"
         Title="Tic Tac Toe" Height="450" Width="800">
+    <!--<Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+    </Window.Resources> -->
     <Grid>
         <!---->
         <Grid.ColumnDefinitions>
