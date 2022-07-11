@@ -6,11 +6,12 @@
         xmlns:local="clr-namespace:Tic_Tac_Toe"
         mc:Ignorable="d"
         Title="Tic Tac Toe" Height="450" Width="800">
-    <!--<Window.Resources>
+    <Window.Resources>
         <Style TargetType="{x:Type Button}">
-            <Setter Property="Margin" Value="0"/>
+            <EventSetter Event="Click" Handler="btnSelectField_Click"/>
+            <!--<Setter Property="Margin" Value="0"/>-->
         </Style>
-    </Window.Resources> -->
+    </Window.Resources>
     <Grid>
         <!--Definitions-->
         <Grid.ColumnDefinitions>
@@ -35,14 +36,14 @@
         <TextBlock HorizontalAlignment="Left" Text="Now playing: 'Player1'/'Player2'" VerticalAlignment="Top" Width="443" Height="22" Margin="192,10,0,0" FontFamily="Wide Latin" FontSize="15" Foreground="BlueViolet" Grid.ColumnSpan="3"/>
         <Button Name="btnBack" Click="btnBack_Click" Content="Back" HorizontalAlignment="Left" Margin="162,12,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.02,0.804" Width="95" FontFamily="Wide Latin" FontSize="15" Foreground="BlueViolet" Background="Black" Grid.Column="2"/>
         <TextBlock Grid.Row="1" HorizontalAlignment="Left" Text="Player 1: 'score'   Player 2: 'score'" VerticalAlignment="Top" Width="443" Height="22" Margin="192,10,0,0" FontFamily="Wide Latin" FontSize="15" Foreground="BlueViolet" Grid.ColumnSpan="3"/>
-        <Button Grid.Row="2" Background="#FFB16CDA" Click="Button_Click">button1</Button>
-        <Button Grid.Column="1" Grid.Row="2" Background="#FFB16CDA" Click="Button_Click_1">button2</Button>
-        <Button Grid.Column="2" Grid.Row="2" Background="#FFB16CDA" Click="Button_Click_2">button3</Button>
-        <Button Grid.Row="3" Background="#FFB16CDA" Click="Button_Click_3">button4</Button>
-        <Button Grid.Column="1" Grid.Row="3" Background="#FFB16CDA" Click="Button_Click_4">button5</Button>
-        <Button Grid.Column="2" Grid.Row="3" Background="#FFB16CDA" Click="Button_Click_5">button6</Button>
-        <Button Grid.Row="4" Background="#FFB16CDA" Click="Button_Click_6">button7</Button>
-        <Button Grid.Column="1" Grid.Row="4" Background="#FFB16CDA" Click="Button_Click_7">button8</Button>
-        <Button Grid.Column="2" Grid.Row="4" Background="#FFB16CDA" Click="Button_Click_8">button9</Button>
+        <Button Name="btnField1" Click="btnField1_Click" Grid.Row="2" Background="#FFB16CDA">button1</Button>
+        <Button Name="btnField2" Click="btnField2_Click" Grid.Column="1" Grid.Row="2" Background="#FFB16CDA">button2</Button>
+        <Button Name="btnField3" Click="btnField3_Click" Grid.Column="2" Grid.Row="2" Background="#FFB16CDA">button3</Button>
+        <Button Name="btnField4" Click="btnField4_Click" Grid.Row="3" Background="#FFB16CDA">button4</Button>
+        <Button Name="btnField5" Click="btnField5_Click" Grid.Column="1" Grid.Row="3" Background="#FFB16CDA">button5</Button>
+        <Button Name="btnField6" Click="btnField6_Click" Grid.Column="2" Grid.Row="3" Background="#FFB16CDA">button6</Button>
+        <Button Name="btnField7" Click="btnField7_Click" Grid.Row="4" Background="#FFB16CDA">button7</Button>
+        <Button Name="btnField8" Click="btnField8_Click" Grid.Column="1" Grid.Row="4" Background="#FFB16CDA">button8</Button>
+        <Button Name="btnField9" Click="btnField9_Click" Grid.Column="2" Grid.Row="4" Background="#FFB16CDA">button9</Button>
     </Grid>
 </Window>
