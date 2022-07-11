@@ -34,10 +34,67 @@ namespace Tic_Tac_Toe
         }
 
         Logic logic = new Logic();
-        //ToDo
+
         private void btnSelectField_Click(object sender, RoutedEventArgs e)
         {
-          logic.NextPlayer();
+            var field = (Button)sender;
+            //assuring you can't place X or O in already taken field
+            if (field.Content.ToString() == "O" || field.Content.ToString() == "X")
+            {
+                MessageBox.Show("Choose different field");
+
+            }
+            else //else giving next move so switch from x -> o ,o -> x
+            {
+                field.Content = logic.CurrentPlayer;
+                logic.NextPlayer();
+            }
+
+            if (logic.isWon())
+            {
+                MessageBox.Show("Congratulations {name of p1/p2} you won!");
+            }
+            
+
+
         }
+
+        private void btnField1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField6_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField7_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField8_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnField9_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

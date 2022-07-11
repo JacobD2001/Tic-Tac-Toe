@@ -11,6 +11,7 @@ namespace Tic_Tac_Toe
         public string CurrentPlayer { get; set; } = X;
         private const string X = "X";
         private const string O = "O";
+        private string[,] fieldMap = new string[3, 3];
 
         public void NextPlayer()
         {
@@ -21,6 +22,16 @@ namespace Tic_Tac_Toe
             else { CurrentPlayer = X; }
         }
 
+        //ToDo
+        public bool isWon()
+        {
+          /*  if (CurrentPlayer)
+            {
+
+            }*/
+            return true;
+
+        }
 
 
     }
