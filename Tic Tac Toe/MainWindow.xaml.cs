@@ -25,6 +25,15 @@ namespace Tic_Tac_Toe
             InitializeComponent();
         }
 
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            new PlayersNamesWindow().ShowDialog();
+
+
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -69,5 +78,7 @@ namespace Tic_Tac_Toe
         {
 
         }
+
+    
     }
 }

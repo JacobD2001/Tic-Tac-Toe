@@ -22,6 +22,7 @@ namespace Tic_Tac_Toe
         public PlayersNamesWindow()
         {
             InitializeComponent();
+           
         }
 
         private void btnPlay_Click(object sender, RoutedEventArgs e)

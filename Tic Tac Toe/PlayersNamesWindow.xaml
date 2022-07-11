@@ -16,9 +16,9 @@
         <Label Content="Tic Tac Toe" FontFamily="Wide Latin" Foreground="BlueViolet" FontSize="40" HorizontalAlignment="Center"/>
         <Separator Background="MidnightBlue"></Separator>
         <Label HorizontalAlignment="Center" Content="Player 1:" FontFamily="Wide Latin" Foreground="BlueViolet" FontSize="30"/>
-        <TextBox Width="450" HorizontalAlignment="Center" Name="P1" Background="DarkSlateBlue" Foreground="White" FontSize="18"/>
+        <TextBox MaxLength="18" HorizontalContentAlignment="Center" Width="450" HorizontalAlignment="Center" Name="P1" Background="DarkSlateBlue" Foreground="White" FontSize="18"/>
         <Label HorizontalAlignment="Center" Content="Player 2:" FontFamily="Wide Latin" Foreground="BlueViolet" FontSize="30"/>
-        <TextBox Width="450" HorizontalAlignment="Center" Name="P2" Background="DarkSlateBlue" Foreground="White" FontSize="18"/>
+        <TextBox MaxLength="18" HorizontalContentAlignment="Center"  Width="450" HorizontalAlignment="Center" Name="P2" Background="DarkSlateBlue" Foreground="White" FontSize="18"/>
         <Button Name="btnPlay" Click="btnPlay_Click" Content="PLAY" VerticalAlignment="Center" Width="300"  Margin="50" Background="DarkSlateBlue" Foreground="White" FontSize="30"/>
     </StackPanel>
 </Window>
