@@ -49,16 +49,28 @@ namespace Tic_Tac_Toe
                 field.Content = logic.CurrentPlayer;
                 logic.NextPlayer();
             }
+            //////////logic for winning////////
+            //getting coordinates from button tagging
+            var coordinates = field.Tag.ToString().Split(',');
+            logic.firstCoordinate = int.Parse(coordinates[0]);
+            logic.secondCoordinate = int.Parse(coordinates[1]);
+
+            Logic position = new Logic() { firstCoordinate = logic.firstCoordinate, secondCoordinate = logic.secondCoordinate };
+            logic.Update(position, logic.CurrentPlayer);
+
 
             if (logic.isWon())
             {
                 MessageBox.Show("Congratulations {name of p1/p2} you won!");
+                //ToDo two ways 1 - refreshing whole window 2 - (better) refreshing only data in buttons
+                MainWindow newWindow = new MainWindow();
+                Application.Current.MainWindow = newWindow;
+                newWindow.Show();
+                this.Close();
             }
             
-
-
         }
-
+        #region buttons implemented
         private void btnField1_Click(object sender, RoutedEventArgs e)
         {
 
@@ -95,6 +107,6 @@ namespace Tic_Tac_Toe
         {
 
         }
-
+        #endregion
     }
 }
