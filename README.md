@@ -1,6 +1,6 @@
 # Tic Tac Toe  
 :exclamation: :exclamation: :exclamation: THIS PROJECT IS STILL BEING WORKED ON :exclamation: :exclamation: :exclamation:  
-Tic_tac_toe is a game desktop app, but with additional functionalities and multiple, mutually connected app windows.  
+Tic_tac_toe is a desktop app, but with additional functionalities and multiple, mutually connected app windows.  
 Built with use of |c#|.NET 6.0|WPF Framework(XAML)|  
 After turning on the game first window that appears is window where players write down their nicknames for the game and enter the game by clicking play button.  
 ### Players nicknames panel
